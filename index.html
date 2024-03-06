@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-7</title>
+</head>
+<body>
+    <hr>
+    <script>
+        //Task1
+        var city = prompt('(Task1) In which city do you live?','Karachi')
+        if (city == 'Karachi'){
+            alert('Welcome to city of lights')
+        }
+        else if (city == 'karachi'){
+            alert('Welcome to city of lights')
+        }
+        else{
+            alert('Please try again!')
+        }
+
+        //Task2
+        var gender = prompt('(Task2) Whats your gender?')
+        if (gender == "Male"){
+            alert('Good Morning Sir.')
+        }
+        else if (gender == "male"){
+            alert('Good Morning Sir.')
+        }
+        else if (gender == "Female"){
+            alert('Good Morning Maam.')
+        }
+        else if (gender == "female"){
+            alert('Good Morning Maam.')
+        }
+        else{
+            alert('Sorry you wrote it incorect! Please try again.')
+        }
+
+        //Task3
+        var mustStop = prompt("(Task3) What's the color of 'MUST STOP' in traffic signal?")
+        var readyToMove = prompt("(Q2) What's the color of 'READY TO MOVE' in traffic signal?")
+        var moveNow = prompt("(Q3) What's the color of 'MOVE NOW' in traffic signal?")
+
+        document.write('<p align="center"><b> Task 6 </b></p>')
+        document.write('<hr>')
+        document.write('<b> Signal color: </b>')
+        document.write('<b> Message: </b>')
+        document.write('<hr>')
+
+        if (mustStop === 'Red'){
+            document.write('<br>')
+            document.write(mustStop)
+            document.write('<b> Must Stop </b>')
+        }
+        else if (mustStop === 'red'){
+            document.write('<br>')
+            document.write(mustStop)
+            document.write('<b> Must Stop </b>')
+        }
+        else{
+            document.write('<br>')
+            document.write('<b> Incorrect! </b>')
+        }
+
+        if (readyToMove === "Yellow"){
+            document.write('<br>')
+            document.write(readyToMove)
+            document.write('<b> Ready to move </b>')
+        } 
+        else if (readyToMove === "yellow"){
+            document.write('<br>')
+            document.write(readyToMove)
+            document.write('<b> Ready to move </b>')
+        }
+        else{
+            document.write('<br>')
+            document.write('<b> Incorrect! </b>')
+        }
+
+        if (moveNow === "Green"){
+            document.write('<br>')
+            document.write(moveNow)
+            document.write('<b> Move now </b>')
+        }
+        else if (moveNow === "green"){
+            document.write('<br>')
+            document.write(moveNow)
+            document.write('<b> Move now </b>')
+        }
+        else{
+            document.write('<br>')
+            document.write('<b> Incorrect! </b>')
+        }
+        document.write('<hr>')
+
+        //Task4
+        var fuel = prompt('(Task4) Whats the remaining fuel of car? (In-Litres)')
+        if (fuel < 0.25){
+            alert('Please refill the fuel in your car')
+        }   
+        else{
+            alert('You have enough fuel in your car')
+        }
+
+        //Task5a
+        var a = 4;
+        if (++a === 5){
+        alert("(Task5a) given condition for variable a is true");
+        }
+
+        //Task5b
+        var b = 82;
+        if (b++ === 83){
+        alert("(Task5b) given condition for variable b is true");
+        }
+
+        //Task5c
+        var c = 12;
+        if (c++ === 13){
+        alert("(Task5c) condition 1 is true");
+        }
+        if (c === 13){
+        alert("(Task5c) condition 2 is true");
+        }
+        if (++c < 14){
+        alert("(Task5c) condition 3 is true");
+        }
+        if(c === 14){
+        alert("(Task5c) condition 4 is true");
+        }
+
+        //Task5d
+        var materialCost = 20000;
+        var laborCost = 2000;
+        var totalCost = materialCost + laborCost;
+        if (totalCost === laborCost + materialCost){
+        alert("(Task5d) The cost equals");
+        }
+
+        //Task5e
+        if (true){
+        alert("(Task5e) True");
+        }
+        if (false){
+        alert("(Task5e) False");
+        }
+
+        //Task5f
+        if("car" < "cat"){
+        alert("(Task5f) car is smaller than cat");
+        }
+
+        //Task6
+        document.write('<p align="center"><b> Task 6 </b></p>')
+
+        var subject1 = prompt('Add a First Subject', 'English');
+        var totalMarks1 =+ prompt('Enter ' + subject1 + "'s Total Marks",100);
+        var obtainedMarks1 =+ prompt('How many marks have you obtained in ' + subject1 + "?");
+
+        var subject2 = prompt('Add a Second Subject', 'Math');
+        var totalMarks2 =+ prompt('Enter ' + subject2 + "'s Total Marks",100);
+        var obtainedMarks2 =+ prompt('How many marks have you obtained in ' + subject2 + "?");
+
+        var subject3 = prompt('Add a Third Subject', 'Urdu');
+        var totalMarks3 =+ prompt('Enter ' + subject3 + "'s Total Marks",100);
+        var obtainedMarks3 =+ prompt('How many marks have you obtained in ' + subject3 + "?");
+        
+        var allObtainedMarks = obtainedMarks1 + obtainedMarks2 + obtainedMarks3
+        var allTotalMarks = totalMarks1 + totalMarks2 + totalMarks3
+
+        if (obtainedMarks1 && obtainedMarks2 && obtainedMarks3 >= 1){
+            (alert('Added Obtained marks!'))
+        }
+        else (alert('Retry! You added incorrect obtained marks!'))
+
+        if (totalMarks1 && totalMarks2 && totalMarks3 >= 1){
+            (alert('Added Total marks!'))
+        }
+        else (alert('Retry! You added incorrect total marks!'))
+
+
+        var result1 = obtainedMarks1 / totalMarks1 * 100
+        var result2 = obtainedMarks2 / totalMarks2 * 100
+        var result3 = obtainedMarks3 / totalMarks3 * 100
+        var allResult = allObtainedMarks / allTotalMarks * 100
+
+        document.write('<p align="center"><b> Mark Sheet </b></p>')
+
+        document.write('<hr>')
+        document.write('<b> Total marks: </b> ' + allTotalMarks)
+        document.write('<hr>')
+        document.write(subject1 + " : " + obtainedMarks1 + " out of " + totalMarks1 + " - Percentage: " + result1 + "%")
+        document.write('<br>')
+        document.write(subject2 + " : " + obtainedMarks2 + " out of " + totalMarks2 + " - Percentage: " + result2 + "%")
+        document.write('<br>')
+        document.write(subject3 + " : " + obtainedMarks3 + " out of " + totalMarks3 + " - Percentage: " + result3 + "%")
+        document.write('<hr>')
+        document.write('<b> Total obtained marks: </b> ' + allObtainedMarks)
+        document.write('<hr>')
+        document.write('<b> Total Percentage: </b> ' + allResult)
+        document.write('<hr>')
+        document.write('<b> Grade: </b> ')
+
+        if (allResult >= 80){
+            document.write('A-one')
+        }
+        else if (allResult >= 70){
+            document.write('A')
+        }
+        else if (allResult >= 60){
+            document.write('B')
+        }
+        else (
+            document.write('Fail')
+        )
+
+        document.write('<hr>')
+        document.write('<b> Grade: </b> ')
+
+        if (allResult >= 80){
+            document.write('Excellent')
+        }
+        else if (allResult >= 70){
+            document.write('Good')
+        }
+        else if (allResult >= 60){
+            document.write('You need to improve')
+        }
+        else (
+            document.write('Sorry')
+        )
+        document.write('<hr>')
+
+        //Task7
+        var guess1 = "Incorrect answer. Try again!"
+        var guess2 = "Incorrect answer. Try again!"
+        var guess3 = "Incorrect answer. Try again!"
+        var guess4 = "Incorrect answer. Try again!"
+        var guess5 = "Close enough to the correct answer."
+        var guess6 = "Bingo! Correct answer."
+        var guess7 = "Close enough to the correct answer."
+        var guess8 = "Incorrect answer. Try again!"
+        var guess9 = "Incorrect answer. Try again!"
+        var guess10 = "Incorrect answer. Try again!"
+
+        var userGuess =+ prompt('(Task7) Guess a number from 10 to 1 [GAME]')
+        if (userGuess === 1){
+            alert(guess1)
+        }
+        else if (userGuess === 2){
+            alert(guess2)
+        }
+        else if (userGuess === 3){
+            alert(guess3)
+        }
+        else if (userGuess === 4){
+            alert(guess4)
+        }
+        else if (userGuess === 5){
+            alert(guess5)
+        }
+        else if (userGuess === 6){
+            alert(guess6)
+        }
+        else if (userGuess === 7){
+            alert(guess7)
+        }
+        else if (userGuess === 8){
+            alert(guess8)
+        }
+        else if (userGuess === 9){
+            alert(guess9)
+        }
+        else if (userGuess === 10){
+            alert(guess10)
+        }
+        else{
+            alert('You entered wrong number! Try again.')
+        }
+
+        //Task8
+        var userNumber =+ prompt('(Task8) Enter any number')
+        if (userNumber % 3 === 0){
+            alert('Your number is devisisble!')
+        } else{
+            alert('Your number is not devisisble!')
+        }
+
+        //Task9
+        var numberUser =+ prompt('(Task9) Enter any number')
+        if (numberUser % 2 === 0){
+            alert('The number is even!')
+        } else{
+            alert('Your number is odd.')
+        }
+
+        //Task10
+        var tempNum =+ prompt('(Task10) Whats temperature today?') 
+        if (tempNum >= 40){
+            alert("It is too hot outside.")
+        }
+        else if (tempNum >= 30){
+            alert("The Weather today is Normal.")
+        }
+        else if (tempNum >= 20){
+            alert("Today's Weather is Cool.")
+        }
+        else if (tempNum >= 10){
+            alert("OMG! Today’s weather is so Cool.")
+        }
+        else{
+            alert('Idk find it out on google')
+        }
+
+        //Task11
+        var firstNumber =+ prompt('(Task11) Enter the first number!')
+        var secondNumber =+ prompt('Enter the second number.')
+        var operation = prompt("Enter any operation: +, -, *, /, %")
+
+        if (operation == "+"){
+            alert(firstNumber + secondNumber)
+        }
+        else if (operation == "-"){
+            alert(firstNumber - secondNumber)
+        } 
+        else if (operation == "*"){
+            alert(firstNumber * secondNumber)
+        } 
+        else if (operation == "/"){
+            alert(firstNumber / secondNumber)
+        } 
+        else if (operation == "%"){
+            alert(firstNumber % secondNumber)
+        } 
+        else{
+            alert('You did something wrong. Try again!')
+        }
+    </script>
+</body>
+</html>
